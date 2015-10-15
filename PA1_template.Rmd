@@ -94,7 +94,8 @@ stepXinterval$interval[ which.max(stepXinterval$steps)]
 sum(!complete_cases)
 ```  
 
-2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.  
+2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated.  
+I have substituted the NA values by the mean for that 5-minute interval.
 
 ```{r}
 for (i in 1:dim(activity_data)[1])

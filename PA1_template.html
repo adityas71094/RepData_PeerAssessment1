@@ -333,7 +333,8 @@ plot(stepXinterval, type = &quot;l&quot;)
 </code></pre>
 
 <ol>
-<li>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.<br/></li>
+<li>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated.<br/>
+I have substituted the NA values by the mean for that 5-minute interval.</li>
 </ol>
 
 <pre><code class="r">for (i in 1:dim(activity_data)[1])
